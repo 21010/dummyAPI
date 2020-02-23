@@ -1,9 +1,9 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('micro-cors');
 const config = require('./config');
 const server = express();
 
-server.use(cors());
+server.use(cors({ allowMethods: ['GET', 'PUT', 'POST', 'DELETE'] }));
 server.all('*', (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");

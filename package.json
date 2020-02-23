@@ -1,0 +1,25 @@
+{
+  "name": "dummyapi",
+  "version": "1.0.0",
+  "description": "It's just a dummy API which serves demo data for front-end projects.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/21010/dummyAPI.git"
+  },
+  "author": "Grzegorz Ziolo (21010)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21010/dummyAPI/issues"
+  },
+  "homepage": "https://github.com/21010/dummyAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "clone": "^2.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

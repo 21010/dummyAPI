@@ -9,7 +9,7 @@
             "src": "/contacts",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "no-cors"
             },
             "methods": ["GET"]
         },
@@ -17,7 +17,7 @@
             "src": "/contacts/reset",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "no-cors"
             },
             "methods": ["POST"]
         },
@@ -25,7 +25,7 @@
             "src": "/contact",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "no-cors"
             },
             "methods": ["POST"]
         },
@@ -33,7 +33,7 @@
             "src": "/contact/(?<id>[^/]+)",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "no-cors"
             },
             "methods": ["GET", "DELETE", "PUT"]
         }

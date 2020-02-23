@@ -1,14 +1,9 @@
 const express = require('express');
-const cors = require('micro-cors');
+const cors = require('cors');
 const config = require('./config');
 const server = express();
 
-server.use(cors({ allowMethods: ['GET', 'PUT', 'POST', 'DELETE'] }));
-server.all('*', (req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "no-cors");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});
+server.use(cors());
 server.use(express.static('public'));
 
 server.use((req, res, next) => {

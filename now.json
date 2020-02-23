@@ -9,7 +9,9 @@
             "src": "/contacts",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "no-cors"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET",
+                "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
             },
             "methods": ["GET"]
         },
@@ -17,7 +19,9 @@
             "src": "/contacts/reset",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "no-cors"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "POST",
+                "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
             },
             "methods": ["POST"]
         },
@@ -25,7 +29,9 @@
             "src": "/contact",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "no-cors"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "POST",
+                "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
             },
             "methods": ["POST"]
         },
@@ -33,7 +39,9 @@
             "src": "/contact/(?<id>[^/]+)",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "no-cors"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, DELETE, PUT",
+                "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
             },
             "methods": ["GET", "DELETE", "PUT"]
         }

@@ -9,7 +9,7 @@
             "src": "/contacts",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "\*",
+                "Access-Control-Allow-Origin": "\\*",
                 "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
                 "Access-Control-Allow-Credentials": "true"
             },
@@ -19,7 +19,7 @@
             "src": "/contacts/reset",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "\*",
+                "Access-Control-Allow-Origin": "\\*",
                 "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
                 "Access-Control-Allow-Credentials": "true"
             },
@@ -29,7 +29,7 @@
             "src": "/contact",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "\*",
+                "Access-Control-Allow-Origin": "\\*",
                 "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
                 "Access-Control-Allow-Credentials": "true"
             },
@@ -39,7 +39,7 @@
             "src": "/contact/(?<id>[^/]+)",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "\*",
+                "Access-Control-Allow-Origin": "\\*",
                 "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
                 "Access-Control-Allow-Credentials": "true"
             },

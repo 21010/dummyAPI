@@ -4,6 +4,11 @@ const config = require('./config');
 const server = express();
 
 server.use(cors());
+server.all('*', (req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
 server.use(express.static('public'));
 
 server.use((req, res, next) => {
